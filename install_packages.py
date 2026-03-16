@@ -24,7 +24,7 @@ def run_command(cmd):
 def main():
     print("""
 +----------------------------------------------------------+
-¦   ASSERT-FLOW v2.0 Package Installation                 ¦
+¦   ASSERGENT Package Installation                 ¦
 ¦   Python 3.9 Compatible Versions                        ¦
 +----------------------------------------------------------+
 """)
