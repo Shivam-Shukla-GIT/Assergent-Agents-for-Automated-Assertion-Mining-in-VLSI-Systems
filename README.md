@@ -2,6 +2,7 @@
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Gemini API](https://img.shields.io/badge/API-Gemini%202.0-green.svg)](https://ai.google.dev/)
+[![Cadence JasperGold](https://img.shields.io/badge/Cadence-JasperGold-red.svg)](https://www.cadence.com/en_US/home/tools/system-design-and-verification/formal-and-static-verification.html)
 
 **Assergent** is an autonomous, retrieval-augmented framework developed at IIIT Delhi's NDCL Lab that generates formally verified SystemVerilog Assertions (SVAs) from natural language specifications. It bridges the gap between high-level design intent and formal verification using semantic retrieval over a curated motif database and iterative closed-loop refinement via Cadence JasperGold.
 
@@ -89,7 +90,7 @@ assergent/
 ├── complete_workflow.sh       # End-to-end automation script
 ├── install_packages.py        # Dependency installer
 ├── database/                  # Raw assertion text files
-├── requirements.txt
+└── requirements.txt
 ```
 
 ---
