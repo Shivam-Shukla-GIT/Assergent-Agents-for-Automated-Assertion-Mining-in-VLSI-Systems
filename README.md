@@ -1,7 +1,6 @@
 # 🤖 Assergent: Agents for Automated Assertion Mining in VLSI Systems
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Gemini API](https://img.shields.io/badge/API-Gemini%202.0-green.svg)](https://ai.google.dev/)
 
 **Assergent** is an autonomous, retrieval-augmented framework developed at IIIT Delhi's NDCL Lab that generates formally verified SystemVerilog Assertions (SVAs) from natural language specifications. It bridges the gap between high-level design intent and formal verification using semantic retrieval over a curated motif database and iterative closed-loop refinement via Cadence JasperGold.
@@ -91,7 +90,6 @@ assergent/
 ├── install_packages.py        # Dependency installer
 ├── database/                  # Raw assertion text files
 ├── requirements.txt
-└── LICENSE
 ```
 
 ---
@@ -303,12 +301,6 @@ Contributions are welcome. Please follow these steps:
 4. Submit a pull request with a clear description
 
 Bug reports and feature requests go through [GitHub Issues](https://github.com/Shivam-Shukla-GIT/Assergent/issues).
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
