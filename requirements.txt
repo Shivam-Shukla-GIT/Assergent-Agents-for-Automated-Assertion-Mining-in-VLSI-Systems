@@ -1,0 +1,7 @@
+numpy
+requests
+scikit-learn
+transformers
+sentence-transformers
+faiss-cpu
+conda install -c conda-forge faiss-cpu -y
