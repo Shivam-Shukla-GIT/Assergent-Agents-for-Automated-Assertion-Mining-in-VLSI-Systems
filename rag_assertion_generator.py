@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 rag_assertion_generator.py - RAG-Enhanced Assertion Generation
-FIXED VERSION: Using gemini-2.0-flash with timestamped result directories
+ASSERGENT: Using gemini-2.0-flash with timestamped result directories
 
 Usage:
     conda activate myenv
@@ -352,7 +352,7 @@ Generate the corrected assertion:
   * Ensure syntactic and semantic correctness"""
 
 # ============================================================================
-# Gemini LLM Interface (EXACT ASSERT-AGENT METHOD)
+# Gemini LLM Interface (EXACT ASSERGENT METHOD)
 # ============================================================================
 
 class GeminiInterface:
@@ -452,11 +452,11 @@ class GeminiInterface:
         return error_msg
 
 # ============================================================================
-# JasperGold Verification Engine (Using ASSERT-AGENT method)
+# JasperGold Verification Engine (Using ASSERGENT method)
 # ============================================================================
 
 class JasperGoldEngine:
-    """JasperGold verification using ASSERT-AGENT's proven method"""
+    """JasperGold verification using ASSERGENT's proven method"""
     
     def __init__(self, work_dir: str = "jasper_work"):
         self.logger = logging.getLogger("JasperGold")
@@ -481,7 +481,7 @@ class JasperGoldEngine:
         work_rtl = os.path.join(self.work_dir, f"rtl_with_assertion_iter_{iteration}.sv")
         
         with open(work_rtl, 'w') as f:
-            f.write(rtl_with_assertion)
+            f.write(rtl_with_ion)
         
         self.logger.info(f"Created RTL with assertion: {work_rtl}")
         
@@ -525,7 +525,7 @@ class JasperGoldEngine:
         return '\n'.join(modified_lines)
 
     def _create_jasper_script(self, rtl_file: str, module_name: str, iteration: int) -> str:
-        """Create JasperGold TCL script (ASSERT-AGENT style)"""
+        """Create JasperGold TCL script (ASSERGENT style)"""
         
         script_content = f"""# RAG Assertion Verification Script - Iteration {iteration}
 
@@ -580,7 +580,7 @@ exit
         return script_path
 
     def _execute_jaspergold(self, script_path: str, iteration: int) -> str:
-        """Execute JasperGold using ASSERT-AGENT method"""
+        """Execute JasperGold using ASSERGENT method"""
         
         tcsh_script = os.path.join(self.work_dir, f"run_jasper_iter_{iteration}.tcsh")
         
